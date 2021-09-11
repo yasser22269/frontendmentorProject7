@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-decoration: none;
+}
+
+body {
+    --Violet: hsl(257, 40%, 49%);
+    --SoftMagenta: hsl(300, 69%, 71%);
+    background-color: Var(--Violet); 
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    --FontSize: 18px;
+}
+.center-text {
+    text-align: center;
+}
+.img-background{
+    background: url("../images/bg-desktop.svg") no-repeat;
+    background-size: cover;
+    left: 0;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    position: absolute;
+}
+main{
+    overflow: hidden;
+    height: 881px;
+    position: relative;
+    padding: 66px;
+}
+main .logo {
+    margin-bottom: 100px;
+}
+main .logo img{
+    width: 220px;
+}
+main .info {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+    align-content: center;
+    flex-direction: row;
+    /* gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(calc(98%/2), 1fr));
+    display: grid;
+    height: 500px; */
+
+}
+main .info .left{
+
+}
+
+main .info .left img{
+    /* width: 100%; */
+    width: 650px;
+}
+main .info .right{
+    margin-top: 41px;
+}
+main .info .right h1{
+    color: #fff;
+    font-size: 35px;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+main .info .right p{
+    color: rgb(240 232 249);
+    margin-bottom: 30px;
+}
+main .info .right a{
+    color: var( --Violet);
+    background: #fff;
+    padding: 13px 58px;
+    border-radius: 50px;
+    font-size: 16px;
+    box-shadow: 3px 2px 11px 1px #4e4e4e;
+    transition: .3s;
+    font-family: 'Poppins', sans-serif;
+}
+main .info .right a:hover{
+    color: #fff;
+    background: var( --SoftMagenta);
+    font-weight: 100;
+
+}
+
+footer {
+    position: absolute;
+    top: 90%;
+    right: 66px;
+    display:inline-flex;
+}
+footer i{
+    color: #fff;
+    margin-right: 12px;
+    font-size: 17px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    width: 40px;
+    height: 40px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: .3s;
+}
+footer i:hover{
+    color: var( --SoftMagenta);
+    border: 1px solid var( --SoftMagenta);
+}
